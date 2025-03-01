@@ -1,5 +1,10 @@
-import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
 from typing import Tuple
+import numpy as np
+
+rcParams['font.sans-serif'] = ['SimHei']
+rcParams['axes.unicode_minus'] = False
 
 
 def kmeans(raw_data: np.ndarray, k: int, max_iters: int = 100) -> Tuple[np.ndarray, np.ndarray]:
@@ -19,10 +24,11 @@ def kmeans(raw_data: np.ndarray, k: int, max_iters: int = 100) -> Tuple[np.ndarr
 
     return centroids, labels
 
-def main()->None:
-  data = np.concatenate(
+
+def main() -> None:
+    data = np.concatenate(
         [
-            np.random.randn(50, 2) + [2, 2],
+            np.random.randn(50, 2) + [-2, 2],
             np.random.randn(50, 2) + [-2, -2],
             np.random.randn(50, 2) + [2, -2],
         ]
@@ -32,14 +38,16 @@ def main()->None:
     centroids, labels = kmeans(data, k)
 
     print("聚类中心：\n", centroids)
-    print("数据点标签：\n", labels)
-
-    import matplotlib.pyplot as plt
+    print("数据点标签统计：\n", np.bincount(labels))
 
     plt.scatter(data[:, 0], data[:, 1], c=labels)
-    plt.scatter(centroids[:, 0], centroids[:, 1], marker="*", s=200, c="r")
-    # plt.show()
-    plt.savefig("kmeans_result.png")
+    plt.scatter(centroids[:, 0], centroids[:, 1], marker="*", s=200, c="r", label='聚类中心')
+    plt.title("k均值聚类")
+    plt.xlabel("X")
+    plt.ylabel("Y")
+    plt.legend()
+    plt.savefig("../img/kmeans_result.png")
+
 
 if __name__ == "__main__":
     main()
