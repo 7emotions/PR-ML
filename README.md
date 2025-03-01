@@ -16,17 +16,13 @@
 <!-- PROJECT LOGO -->
 <br />
 
-<p align="center">
-  <a href="https://github.com/7emotions/PR-ML/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<p align="center">  <a href="https://github.com/7emotions/PR-ML/">
+  <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">PR-ML</h3>
   <p align="center">
-    Pattern Recognition and Machine Learning.
-    <br />
-    <a href="https://github.com/7emotions/PR-ML"><strong>探索本项目的文档 »</strong></a>
-    <br />
+    Pattern Recognition and Machine Learning.<br />
+    <a href="https://github.com/7emotions/PR-ML"><strong>探索本项目的文档 »</strong></a><br />
     <br />
     <a href="https://github.com/7emotions/PR-ML/releases">查看发布</a>
     ·
@@ -34,51 +30,31 @@
     ·
     <a href="https://github.com/7emotions/PR-ML/issues">提出新特性</a>
   </p>
-
 </p>
- 
+
 ## 目录
 
-- [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
-  - [安装步骤](#安装步骤)
-- [文档目录](#文档目录)
+- [简介](#简介)
+- [内容](#内容)
+  - [K 均值聚类算法](#k-均值聚类算法)
 - [贡献者](#贡献者)
-  - [如何参与开源项目](#如何参与开源项目)
+  - [如何参与开源项目](#如何参与该项目)
 - [版本控制](#版本控制)
 - [作者](#作者)
 - [鸣谢](#鸣谢)
 
-### 上手指南
+### 简介
 
-###### 开发前的配置要求
+南京理工大学开设的《模式识别与大数据分析技术》课程中学习的算法笔记与代码实现参考。
 
-1. **Python**>=3.11
-~~2. **numpy**>=~~
+### 内容
 
-######
-
-###### **安装步骤**
-
-1. 克隆本仓库
-
-```sh
-git clone https://github.com/7emotions/PR-ML.git
-```
-
-### 文件目录说明
+#### [K 均值聚类算法](k_mean_cluster/doc.md)
 
 
+### 贡献者。
 
-### 开发的架构 
-
-请阅读[ARCHITECTURE.md](https://github.com/7emotions/PR-ML/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
-
-### 贡献者
-
-请阅读**CONTRIBUTING.md** 查阅为该项目做出贡献的开发者。
-
-#### 如何参与开源项目
+#### 如何参与该项目
 
 贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
 
